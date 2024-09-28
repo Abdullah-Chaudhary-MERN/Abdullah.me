@@ -70,6 +70,7 @@ const Contact = () => {
     ).then(
       (result) => {
         console.log(result.text);
+        console.log(done);
         setDone(true);
         form.current.reset(); // Reset form on success
         setShowMessage(true);
