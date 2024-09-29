@@ -9,6 +9,7 @@ import crown from "../../img/crown.png";
 import ReactIcon from "../../img/React.png";
 import NodeIcon from "../../img/Node.png";
 import javascriptIcon from "../../img/javascript.png";
+import MongoIcon from "../../img/Mongo.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import FloatinIcon from "../FloatingIcon/FloatingIcon";
 import Github from "../../img/github.png";
@@ -78,8 +79,17 @@ const Intro = () => {
           <FloatinDiv img={crown} text1="Web" text2="Developer" />
         </motion.div>
         <motion.div
-          initial={{ top: "30%", left: "80%" }}
-          whileInView={{ left: "70%" }}
+          initial={{ top: "22%", left: "80%" }}
+          whileInView={{ left: "23rem" }}
+          transition={transition}
+          className="floating-div"
+        >
+          {/* floatinDiv mein change hy dark mode ka */}
+          <FloatinIcon img={MongoIcon}/>
+        </motion.div>
+        <motion.div
+          initial={{ top: "40%", left: "80%" }}
+          whileInView={{ left: "23rem" }}
           transition={transition}
           className="floating-div"
         >
