@@ -80,7 +80,7 @@ const Intro = () => {
         </motion.div>
         <motion.div
           initial={{ top: "22%", left: "80%" }}
-          whileInView={{ left: "23rem" }}
+          whileInView={{ left: "22rem" }}
           transition={transition}
           className="floating-div"
         >
