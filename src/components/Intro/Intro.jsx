@@ -6,7 +6,11 @@ import boy from "../../img/boy.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
+import ReactIcon from "../../img/React.png";
+import NodeIcon from "../../img/Node.png";
+import javascriptIcon from "../../img/javascript.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
+import FloatinIcon from "../FloatingIcon/FloatingIcon";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
@@ -58,12 +62,12 @@ const Intro = () => {
         <img src={boy} alt="" />
         {/* animation */}
         <motion.img
-          initial={{ left: "-36%" }}
-          whileInView={{ left: "-24%" }}
-          transition={transition}
-          src={glassesimoji}
-          alt=""
-        />
+            initial={{ left: "-36%" }}
+            whileInView={{ left: "-24%" }}
+            transition={transition}
+            src={glassesimoji}
+            alt=""
+          />
 
         <motion.div
           initial={{ top: "-4%", left: "74%" }}
@@ -73,16 +77,40 @@ const Intro = () => {
         >
           <FloatinDiv img={crown} text1="Web" text2="Developer" />
         </motion.div>
-
+        <motion.div
+          initial={{ top: "30%", left: "80%" }}
+          whileInView={{ left: "70%" }}
+          transition={transition}
+          className="floating-div"
+        >
+          {/* floatinDiv mein change hy dark mode ka */}
+          <FloatinIcon img={javascriptIcon}/>
+        </motion.div>
         {/* animation */}
         <motion.div
-          initial={{ top: "60%", left: "80%" }}
+          initial={{ top: "60%", left: "75%" }}
           whileInView={{ left: "70%" }}
           transition={transition}
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
           <FloatinDiv img={crown} text1="Back-end" text2="Developer" />
+        </motion.div>
+        <motion.div
+             initial={{ left: "0rem", top: "5rem" }}
+             whileInView={{ left: "1rem"}}
+            transition={transition}
+            className="floating-div"
+          >
+            <FloatinIcon img={NodeIcon} />
+        </motion.div>
+        <motion.div
+             initial={{ left: "0rem", top: "12rem" }}
+             whileInView={{ left: "1rem"}}
+            transition={transition}
+            className="floating-div"
+          >
+            <FloatinIcon img={ReactIcon} />
         </motion.div>
         <motion.div
           initial={{ left: "9rem", top: "18rem" }}

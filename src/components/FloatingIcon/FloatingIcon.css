@@ -1,0 +1,26 @@
+.floatingIcon {
+    display: flex;
+    justify-content: center; /* Center the icon */
+    align-items: center;
+    padding: 0; /* No padding */
+    position: relative; /* Make it easier to position the background */
+}
+
+.floatingIcon::before {
+    content: '';
+    position: absolute;
+    width: 60px; /* Same width as the icon */
+    height: 60px; /* Same height as the icon */
+    background-color: white; /* White background */
+    border-radius: 50%; /* Make the background circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for floating effect */
+    z-index: 0; /* Place it behind the image */
+}
+
+.floatingIcon > img {
+    width: 60px; /* Set width for the icon */
+    height: 60px; /* Set height for the icon */
+    border-radius: 50%; /* Make the image circular */
+    position: relative;
+    z-index: 1; /* Ensure the image is on top of the background */
+}
