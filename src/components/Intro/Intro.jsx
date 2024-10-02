@@ -80,7 +80,7 @@ const Intro = () => {
         </motion.div>
         <motion.div
           initial={{ top: "22%", left: "80%" }}
-          whileInView={{ left: "22rem" }}
+          whileInView={{ left: "19rem" }}
           transition={transition}
           className="floating-div"
         >
@@ -89,7 +89,7 @@ const Intro = () => {
         </motion.div>
         <motion.div
           initial={{ top: "40%", left: "80%" }}
-          whileInView={{ left: "23rem" }}
+          whileInView={{ left: "19rem" }}
           transition={transition}
           className="floating-div"
         >
@@ -98,7 +98,7 @@ const Intro = () => {
         </motion.div>
         {/* animation */}
         <motion.div
-          initial={{ top: "60%", left: "75%" }}
+          initial={{ top: "55%", left: "75%" }}
           whileInView={{ left: "70%" }}
           transition={transition}
           className="floating-div"
@@ -123,7 +123,7 @@ const Intro = () => {
             <FloatinIcon img={ReactIcon} />
         </motion.div>
         <motion.div
-          initial={{ left: "9rem", top: "18rem" }}
+          initial={{ left: "9rem", top: "21rem" }}
           whileInView={{ left: "3%" }}
           transition={transition}
           className="floating-div"
